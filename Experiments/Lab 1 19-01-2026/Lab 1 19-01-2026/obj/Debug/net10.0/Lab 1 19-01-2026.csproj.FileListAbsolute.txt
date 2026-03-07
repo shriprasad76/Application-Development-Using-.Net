@@ -1,4 +1,0 @@
-D:\6th Semister\Application Development Using .NET lecture\Experiments\Lab 1 19-01-2026\Lab 1 19-01-2026\obj\Debug\net10.0\Lab 1 19-01-2026.GeneratedMSBuildEditorConfig.editorconfig
-D:\6th Semister\Application Development Using .NET lecture\Experiments\Lab 1 19-01-2026\Lab 1 19-01-2026\obj\Debug\net10.0\Lab 1 19-01-2026.AssemblyInfoInputs.cache
-D:\6th Semister\Application Development Using .NET lecture\Experiments\Lab 1 19-01-2026\Lab 1 19-01-2026\obj\Debug\net10.0\Lab 1 19-01-2026.AssemblyInfo.cs
-D:\6th Semister\Application Development Using .NET lecture\Experiments\Lab 1 19-01-2026\Lab 1 19-01-2026\obj\Debug\net10.0\Lab 1 19-01-2026.csproj.CoreCompileInputs.cache
