@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Garage Customer Vehicle Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container py-4">
+        <h1 class="mb-4 text-center">Garage Customer Vehicle Management</h1>
+
+        <div id="message" class="mb-3"></div>
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <h2 class="card-title">Add / Edit Vehicle</h2>
+                <form id="vehicle-form">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Customer Name *</label>
+                            <input type="text" id="customer-name" class="form-control" required />
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Mobile Number *</label>
+                            <input type="text" id="mobile-number" class="form-control" required />
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Vehicle Model</label>
+                            <input type="text" id="vehicle-model" class="form-control" />
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Vehicle Number</label>
+                            <input type="text" id="vehicle-number" class="form-control" />
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label">Problem Description</label>
+                            <textarea id="problem-description" class="form-control" rows="3"></textarea>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Date Received *</label>
+                            <input type="date" id="date-received" class="form-control" required />
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Expected Return Date *</label>
+                            <input type="date" id="expected-return-date" class="form-control" required />
+                        </div>
+                    </div>
+
+                    <div class="mt-4 d-flex gap-2">
+                        <button type="submit" class="btn btn-primary">Save Vehicle</button>
+                        <button type="button" id="cancel-edit" class="btn btn-secondary">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">All Vehicles</h2>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Customer</th>
+                                        <th>Mobile</th>
+                                        <th>Model</th>
+                                        <th>Vehicle No.</th>
+                                        <th>Received</th>
+                                        <th>Return</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="vehicles-table-body"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <h2 class="card-title">Upcoming Deliveries</h2>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-bordered">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Customer</th>
+                                        <th>Return</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="upcoming-table-body"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+﻿Using project 'D:\6th Semister\Application Development Using .NET lecture\Application-Development-Using-.Net\Dotnet Project\backend\GarageAPI.csproj'.
+Using startup project 'D:\6th Semister\Application Development Using .NET lecture\Application-Development-Using-.Net\Dotnet Project\backend\GarageAPI.csproj'.
+dotnet msbuild /getProperty:ProjectName /getProperty:AssemblyName /getProperty:DesignAssembly /getProperty:Language /getProperty:OutputPath /getProperty:PlatformTarget /getProperty:ProjectAssetsFile /getProperty:ProjectDir /getProperty:RootNamespace /getProperty:RuntimeFrameworkVersion /getProperty:TargetFileName /getProperty:TargetFrameworkMoniker /getProperty:Nullable /getProperty:TargetFramework /getProperty:TargetPlatformIdentifier /getProperty:Platform /t:ResolvePackageAssets /getItem:RuntimeCopyLocalItems "D:\6th Semister\Application Development Using .NET lecture\Application-Development-Using-.Net\Dotnet Project\backend\GarageAPI.csproj"
+dotnet msbuild /getProperty:ProjectName /getProperty:AssemblyName /getProperty:DesignAssembly /getProperty:Language /getProperty:OutputPath /getProperty:PlatformTarget /getProperty:ProjectAssetsFile /getProperty:ProjectDir /getProperty:RootNamespace /getProperty:RuntimeFrameworkVersion /getProperty:TargetFileName /getProperty:TargetFrameworkMoniker /getProperty:Nullable /getProperty:TargetFramework /getProperty:TargetPlatformIdentifier /getProperty:Platform /t:ResolvePackageAssets /getItem:RuntimeCopyLocalItems "D:\6th Semister\Application Development Using .NET lecture\Application-Development-Using-.Net\Dotnet Project\backend\GarageAPI.csproj"
+Build started...
+dotnet build "D:\6th Semister\Application Development Using .NET lecture\Application-Development-Using-.Net\Dotnet Project\backend\GarageAPI.csproj" /verbosity:quiet /nologo /p:PublishAot=false
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.28
+
+Build succeeded.
+dotnet exec --depsfile "D:\6th Semister\Application Development Using .NET lecture\Application-Development-Using-.Net\Dotnet Project\backend\bin\Debug\net8.0\GarageAPI.deps.json" --additionalprobingpath C:\Users\shrip\.nuget\packages --additionalprobingpath "C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages" --runtimeconfig "D:\6th Semister\Application Development Using .NET lecture\Application-Development-Using-.Net\Dotnet Project\backend\bin\Debug\net8.0\GarageAPI.runtimeconfig.json" C:\Users\shrip\.dotnet\tools\.store\dotnet-ef\10.0.5\dotnet-ef\10.0.5\tools\net8.0\any\tools\net8.0\any\ef.dll database update --assembly "D:\6th Semister\Application Development Using .NET lecture\Application-Development-Using-.Net\Dotnet Project\backend\bin\Debug\net8.0\GarageAPI.dll" --project "D:\6th Semister\Application Development Using .NET lecture\Application-Development-Using-.Net\Dotnet Project\backend\GarageAPI.csproj" --startup-assembly "D:\6th Semister\Application Development Using .NET lecture\Application-Development-Using-.Net\Dotnet Project\backend\bin\Debug\net8.0\GarageAPI.dll" --startup-project "D:\6th Semister\Application Development Using .NET lecture\Application-Development-Using-.Net\Dotnet Project\backend\GarageAPI.csproj" --project-dir "D:\6th Semister\Application Development Using .NET lecture\Application-Development-Using-.Net\Dotnet Project\backend\\" --root-namespace GarageAPI --language C# --framework net8.0 --design-assembly C:\Users\shrip\.nuget\packages\microsoft.entityframeworkcore.design\8.0.0\lib\net8.0\Microsoft.EntityFrameworkCore.Design.dll --nullable --working-dir "D:\6th Semister\Application Development Using .NET lecture\Application-Development-Using-.Net\Dotnet Project\backend" --verbose
+Using assembly 'GarageAPI'.
+Using startup assembly 'GarageAPI'.
+Using application base 'D:\6th Semister\Application Development Using .NET lecture\Application-Development-Using-.Net\Dotnet Project\backend\bin\Debug\net8.0'.
+Using working directory 'D:\6th Semister\Application Development Using .NET lecture\Application-Development-Using-.Net\Dotnet Project\backend'.
+Using root namespace 'GarageAPI'.
+Using project directory 'D:\6th Semister\Application Development Using .NET lecture\Application-Development-Using-.Net\Dotnet Project\backend\'.
+Remaining arguments: .
+Finding DbContext classes...
+Finding IDesignTimeDbContextFactory implementations...
+Finding application service provider in assembly 'GarageAPI'...
+Finding Microsoft.Extensions.Hosting service provider...
+Using environment 'Development'.
+Using application service provider from Microsoft.Extensions.Hosting.
+Found DbContext 'ApplicationDbContext'.
+Finding DbContext classes in the project...
+Using context 'ApplicationDbContext'.
+Finding design-time services referenced by assembly 'GarageAPI'...
+Finding design-time services referenced by assembly 'GarageAPI'...
+No referenced design-time services were found.
+Finding design-time services for provider 'Microsoft.EntityFrameworkCore.SqlServer'...
+Using design-time services from provider 'Microsoft.EntityFrameworkCore.SqlServer'.
+Finding IDesignTimeServices implementations in assembly 'GarageAPI'...
+No design-time services were found.
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [MigrationId], [ProductVersion]
+      FROM [__EFMigrationsHistory]
+      ORDER BY [MigrationId];
+Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+info: Microsoft.EntityFrameworkCore.Migrations[20405]
+      No migrations were applied. The database is already up to date.
+No migrations were applied. The database is already up to date.
+Done.

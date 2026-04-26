@@ -1,0 +1,28 @@
+:root {
+  --primary: #0d6efd;
+  --danger: #dc3545;
+}
+
+body {
+  background: #f8f9fa;
+  color: #212529;
+}
+
+#message {
+  min-height: 2.5rem;
+}
+
+.table-danger {
+  background-color: #f8d7da !important;
+}
+
+.table-danger td,
+.table-danger th {
+  color: #842029;
+}
+
+@media (max-width: 768px) {
+  .table-responsive {
+    overflow-x: auto;
+  }
+}
