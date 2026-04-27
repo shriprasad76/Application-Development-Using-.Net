@@ -1,0 +1,169 @@
+.app-shell {
+  font-family: Arial, sans-serif;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.controls {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.controls label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.95rem;
+}
+
+.login-page,
+.teacher-dashboard {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.login-form,
+.teacher-actions {
+  display: grid;
+  gap: 12px;
+}
+
+.login-form {
+  max-width: 350px;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.95rem;
+}
+
+.login-form input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  margin-top: 4px;
+}
+
+.teacher-dashboard .dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.teacher-actions {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.teacher-actions input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.teacher-actions button {
+  width: 100%;
+}
+
+.marks-section {
+  margin-top: 24px;
+}
+
+.error-message {
+  color: #d93025;
+  font-size: 0.95rem;
+}
+
+.controls input,
+.controls select {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px;
+  margin-top: 4px;
+  width: 160px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  min-width: 80px;
+}
+
+th {
+  background: #f7f7f7;
+  position: sticky;
+  top: 0;
+}
+
+input[type='number'] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 6px;
+}
+
+.footer-actions {
+  margin-top: 16px;
+}
+
+button {
+  background: #0052cc;
+  border: none;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.message {
+  margin-bottom: 12px;
+  color: #1b5e20;
+}

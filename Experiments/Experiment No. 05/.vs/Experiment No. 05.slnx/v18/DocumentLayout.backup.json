@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\6th Semister\\Application Development Using .NET lecture\\Experiments\\Experiment No. 05\\",
+  "WorkspaceRootPath": "D:\\6th Semister\\Application Development Using .NET lecture\\Application-Development-Using-.Net\\Experiments\\Experiment No. 05\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F99F7521-6998-4BEB-9383-99AC37739CCD}|Experiment No. 05\\Experiment No. 05.csproj|d:\\6th semister\\application development using .net lecture\\experiments\\experiment no. 05\\experiment no. 05\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F99F7521-6998-4BEB-9383-99AC37739CCD}|Experiment No. 05\\Experiment No. 05.csproj|solutionrelative:experiment no. 05\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7829E33-A00C-22D2-590C-10DB16A43805}|Experiment No. 05\\Experiment No. 05.csproj|d:\\6th semister\\application development using .net lecture\\application-development-using-.net\\experiments\\experiment no. 05\\experiment no. 05\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7829E33-A00C-22D2-590C-10DB16A43805}|Experiment No. 05\\Experiment No. 05.csproj|solutionrelative:experiment no. 05\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,9 +20,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\6th Semister\\Application Development Using .NET lecture\\Experiments\\Experiment No. 05\\Experiment No. 05\\Program.cs",
+              "DocumentMoniker": "D:\\6th Semister\\Application Development Using .NET lecture\\Application-Development-Using-.Net\\Experiments\\Experiment No. 05\\Experiment No. 05\\Program.cs",
               "RelativeDocumentMoniker": "Experiment No. 05\\Program.cs",
-              "ToolTip": "D:\\6th Semister\\Application Development Using .NET lecture\\Experiments\\Experiment No. 05\\Experiment No. 05\\Program.cs",
+              "ToolTip": "D:\\6th Semister\\Application Development Using .NET lecture\\Application-Development-Using-.Net\\Experiments\\Experiment No. 05\\Experiment No. 05\\Program.cs",
               "RelativeToolTip": "Experiment No. 05\\Program.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAAiwDQAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

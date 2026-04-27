@@ -1,0 +1,94 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\6th Semister\\Application Development Using .NET lecture\\Application-Development-Using-.Net\\Experiments\\Experiment No. 06\\CRM_MVC\\CRM_MVC.csproj": {}
+  },
+  "projects": {
+    "D:\\6th Semister\\Application Development Using .NET lecture\\Application-Development-Using-.Net\\Experiments\\Experiment No. 06\\CRM_MVC\\CRM_MVC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\6th Semister\\Application Development Using .NET lecture\\Application-Development-Using-.Net\\Experiments\\Experiment No. 06\\CRM_MVC\\CRM_MVC.csproj",
+        "projectName": "CRM_MVC",
+        "projectPath": "D:\\6th Semister\\Application Development Using .NET lecture\\Application-Development-Using-.Net\\Experiments\\Experiment No. 06\\CRM_MVC\\CRM_MVC.csproj",
+        "packagesPath": "C:\\Users\\shrip\\.nuget\\packages\\",
+        "outputPath": "D:\\6th Semister\\Application Development Using .NET lecture\\Application-Development-Using-.Net\\Experiments\\Experiment No. 06\\CRM_MVC\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\shrip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.24, 8.0.24]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.24, 8.0.24]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.24, 8.0.24]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.24, 8.0.24]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

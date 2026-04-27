@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "IY/11enTNCY=",
+  "success": true,
+  "projectFilePath": "D:\\6th Semister\\Application Development Using .NET lecture\\Application-Development-Using-.Net\\Experiments\\Experiment No. 07\\DataAnotation\\DataAnotation.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\shrip\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.24\\microsoft.windowsdesktop.app.ref.8.0.24.nupkg.sha512",
+    "C:\\Users\\shrip\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.24\\microsoft.netcore.app.ref.8.0.24.nupkg.sha512",
+    "C:\\Users\\shrip\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.24\\microsoft.aspnetcore.app.ref.8.0.24.nupkg.sha512",
+    "C:\\Users\\shrip\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.24\\microsoft.netcore.app.host.win-x64.8.0.24.nupkg.sha512"
+  ],
+  "logs": []
+}

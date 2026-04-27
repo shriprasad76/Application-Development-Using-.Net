@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "PNWoN8sSCxc=",
+  "success": true,
+  "projectFilePath": "D:\\6th Semister\\Application Development Using .NET lecture\\Application-Development-Using-.Net\\Experiments\\Experiment No. 10\\LoggingCachingDemo\\LoggingCachingDemo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\shrip\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.6\\microsoft.aspnetcore.openapi.10.0.6.nupkg.sha512",
+    "C:\\Users\\shrip\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

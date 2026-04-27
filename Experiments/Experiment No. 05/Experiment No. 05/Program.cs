@@ -1,58 +1,85 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace AsyncAwaitDemo
+class Program
 {
-    class Program
+    static void Main()
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Synchronous Execution ");
-            SyncMethod();
+        Console.WriteLine("===== 1. Synchronous Execution =====");
+        Stopwatch sw = new Stopwatch();
+        sw.Start();
 
-            Console.WriteLine("\nAsynchronous Execution");
-            AsyncMethod().Wait();   // Wait for async task to finish
+        SyncMethod1();
+        SyncMethod2();
 
-            Console.WriteLine("\nProgram Finished");
-        }
+        sw.Stop();
+        Console.WriteLine("Synchronous Time: " + sw.ElapsedMilliseconds + " ms");
 
-        // 1. Synchronous Method
-        static void SyncMethod()
-        {
-            Console.WriteLine("Task 1 Started");
-            Thread.Sleep(3000); // Blocking call
-            Console.WriteLine("Task 1 Completed");
 
-            Console.WriteLine("Task 2 Started");
-            Thread.Sleep(2000); // Blocking call
-            Console.WriteLine("Task 2 Completed");
-        }
+        Console.WriteLine("\n===== 2. Asynchronous Execution =====");
+        sw.Restart();
 
-        // 2. Asynchronous Method
-        static async Task AsyncMethod()
-        {
-            Task t1 = LongTask1();
-            Task t2 = LongTask2();
+        Task t1 = AsyncMethod1();
+        Task t2 = AsyncMethod2();
 
-            await t1;
-            await t2;
-        }
+        Task.WaitAll(t1, t2);
 
-        // 3. Replace Thread.Sleep with Task.Delay
-        // 4. Method returning Task
-        static async Task LongTask1()
-        {
-            Console.WriteLine("Async Task 1 Started");
-            await Task.Delay(3000); // Non-blocking delay
-            Console.WriteLine("Async Task 1 Completed");
-        }
+        sw.Stop();
+        Console.WriteLine("Asynchronous Time: " + sw.ElapsedMilliseconds + " ms");
 
-        static async Task LongTask2()
-        {
-            Console.WriteLine("Async Task 2 Started");S
-            await Task.Delay(2000); // Non-blocking delay
-            Console.WriteLine("Async Task 2 Completed");
-        }
+
+        Console.WriteLine("\n===== 3. Thread.Sleep vs Task.Delay =====");
+
+        Console.WriteLine("Using Thread.Sleep (Blocking)...");
+        Thread.Sleep(2000);
+        Console.WriteLine("After Thread.Sleep");
+
+        Console.WriteLine("\nUsing Task.Delay (Non-Blocking)...");
+        Task.Delay(2000).Wait();
+        Console.WriteLine("After Task.Delay");
+
+
+        Console.WriteLine("\n===== 4. Method Returning Task =====");
+        Task<int> resultTask = GetNumberAsync();
+        Console.WriteLine("Result from Task: " + resultTask.Result);
+    }
+
+    // 1. Synchronous Methods
+    static void SyncMethod1()
+    {
+        Console.WriteLine("Sync Method 1 Start");
+        Thread.Sleep(2000);
+        Console.WriteLine("Sync Method 1 End");
+    }
+
+    static void SyncMethod2()
+    {
+        Console.WriteLine("Sync Method 2 Start");
+        Thread.Sleep(2000);
+        Console.WriteLine("Sync Method 2 End");
+    }
+
+    // 2. Asynchronous Methods
+    static async Task AsyncMethod1()
+    {
+        Console.WriteLine("Async Method 1 Start");
+        await Task.Delay(2000);
+        Console.WriteLine("Async Method 1 End");
+    }
+
+    static async Task AsyncMethod2()
+    {
+        Console.WriteLine("Async Method 2 Start");
+        await Task.Delay(2000);
+        Console.WriteLine("Async Method 2 End");
+    }
+
+    // 4. Method Returning Task
+    static async Task<int> GetNumberAsync()
+    {
+        await Task.Delay(1000);
+        return 100;
     }
 }
